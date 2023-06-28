@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Bicais Martire Joaquín y Martinez Alvarez Sol - DGT4BV - Turno Tarde - 2023</title>
+</head>
+
+<body>
+    <!--Header -->
+    <header class="container-fluid">
+        <h1 id="logo" class="ps-3">JetPhoneArt</h1>
+        <nav class="row navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container p-0" id="navegacion">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#barra"
+                    aria-controls="menu" aria-expanded="false" aria-label="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="barra">
+                    <ul id="menu" class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#banner" data-ancla="90">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria" data-ancla="100">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#video" data-ancla="100">Comisiones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pastillas" data-ancla="100">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto" data-ancla="100">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del header -->
+
+    <!-- carrusel -->
+    <section id="banner" class=" container-fluid p-0 carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Dibujo 1"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Dibujo 2"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Dibujo 3"></button>
+        </div>
+        <ul class="carousel-inner p-0">
+            <li class="carousel-item active">
+                <picture>
+                    <source media="(max-width: 556px)" srcset="img/angelbanner_xs.png">
+                    <source media="(max-width: 991px)" srcset="img/angelbanner_lg.png">
+                    <img src="img/angelbanner.png" class="d-block w-100" alt="Recorte dibujo angel">
+                </picture>
+
+            </li>
+            <li class="carousel-item">
+                <picture>
+                    <source media="(max-width: 556px)" srcset="img/linkbanner_xs.png">
+                    <source media="(max-width: 991px)" srcset="img/linkbanner_lg.png">
+                    <img src="img/linkbanner.png" class="d-block w-100" alt="Recorte dibujo Link">
+                </picture>
+
+            </li>
+            <li class="carousel-item">
+                <picture>
+                    <source media="(max-width: 556px)" srcset="img/mikubanner_xs.png">
+                    <source media="(max-width: 991px)" srcset="img/mikubanner_lg.png">
+                    <img src="img/mikubanner.png" class="d-block w-100" alt="Recorte dibujo Hatsune Miku">
+                </picture>
+
+            </li>
+        </ul>
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
+    <!-- fin carrusel -->
+    <div class="texto container">
+        <div class="row justify-content-center">
+            <div class=" col-12 col-lg-10  bg-dark p-3 row" style="--bs-bg-opacity: .5; ">
+                <h2>Jetphoneart</h2>
+                <p>Hola soy Joaquín, tambien conocido bajo el usuario de Jetphoneart, y soy un ilustrador estudiando
+                    diseño gráfico! Mis especialidades son trabajar con creadores de contenido, en especial realizando
+                    <strong>emotes</strong>, espero que te guste mi <strong>portfolio</strong>!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- galeria -->
+    <section id="galeria" class="container">
+        <h2>Mis ilustraciones</h2>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0 ">
+                <a data-fancybox="galeria"
+                    data-srcset="img/nyaruko_xs.png 576w, img/nyaruko_lg.png 992w, img/nyaruko.png 1600w"
+                    href="img/nyaruko.png">
+                    <img src="img/nyaruko.png" class="w-100 shadow-1-strong rounded mb-4" alt="Dibujo fanart Nyaruko">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria" data-srcset="img/valk_xs.png 576w, img/valk_lg.png 992w, img/valk.png 1600w"
+                    href="img/valk.png">
+                    <img src="img/valk.png" class="w-100 shadow-1-strong rounded mb-4" alt="Dibujo fanart Apex Legends">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/somacruz_xs.png 576w, img/somacruz_lg.png 992w, img/somacruz.png 1600w"
+                    href="img/somacruz.png">
+                    <img src="img/somacruz.png" class="w-100 shadow-1-strong rounded mb-4" alt="Dibujo fanart Soma">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria" data-srcset="img/miku_xs.png 576w, img/miku_lg.png 992w, img/miku.png 1600w"
+                    href="img/miku.png">
+                    <img src="img/miku.png" class="w-100 shadow-1-strong rounded mb-4" alt="Dibujo fanart Miku">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/suckerpunch_xs.png 576w, img/suckerpunch_lg.png 992w, img/suckerpunch.png 1600w"
+                    href="img/suckerpunch.png">
+                    <img src="img/suckerpunch.png" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Dibujo Chloe Moriondo">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/dakifinal_xs.png 576w, img/dakifinalf_lg.png 992w, img/dakifinal.png 1600w"
+                    href="img/dakifinal.png">
+                    <img src="img/dakifinal.png" class="w-100 shadow-1-strong rounded mb-4" alt="Dibujo fanart Kimetsu">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria"
+                    data-srcset="img/angel_xs.png 576w, img/angel_lg.png 992w, img/angel.png 1600w"
+                    href="img/angel.png">
+                    <img src="img/angel.png" class="w-100 shadow-1-strong rounded mb-4" alt="Dibujo challenge angel">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria" data-srcset="img/phos_xs.png 576w, img/phos_lg.png 992w, img/phos.png 1600w"
+                    href="img/phos.png">
+                    <img src="img/phos.png" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Dibujo fanart Phosphophillyte">
+                </a></div>
+            <div class="col-xl-4 col-md-6 col-xs-12 mb-4 mb-lg-0">
+                <a data-fancybox="galeria" data-srcset="img/link_xs.png 576w, img/link_lg.png 992w, img/link.png 1600w"
+                    href="img/link.png">
+                    <img src="img/link.png" class="w-100 shadow-1-strong rounded mb-4" alt="Dibujo fanart Link">
+                </a></div>
+        </div>
+    </section>
+    <!-- fin galeria -->
+
+    <!-- video -->
+    <section class="container" id="video">
+        <div class="row">
+            <div class="col">
+                <h2>Comisión de PNGtuber</h2>
+                <p>Este vídeo fue realizado para mi página de <em>Fiverr</em>, mostrando mi propuesta de un avatar para
+                    un <em>PNGtuber</em>. ¡Puedes encontrar el link a mi página más abajo! </p>
+                <video src="img/video.mp4" controls poster="img/portada.png" preload=""
+                    class="img-fluid ratio-16x9"></video>
+            </div>
+        </div>
+    </section>
+    <!-- fin video -->
+
+    <!-- pastillas -->
+    <div class="container" id="pastillas">
+        <h2>Mis Skills</h2>
+        <section class="row">
+            <div class="col-xl-3 col-md-6 col-xs-12">
+                <div class="card">
+                    <figure class="pastillaconten">
+                        <picture>
+                            <source media="(max-width: 576px )" srcset="img/miku_xs.png">
+                            <source media="(max-width: 991px )" srcset="img/miku_lg.png">
+                            <img src="img/miku.png" class="card-img-bottom" alt="Dibujo Hatsune Miku">
+                        </picture>
+
+                        <figcaption class="card-text card-img-overlay text-center pt-5 fw-bold">
+                            <h3 class="card-title h5 fw-bold">Ilustraciones</h3>
+                            Utilizando <em>Clip studio paint</em> y una tableta Huion, realizo fanarts y dibujos de
+                            origen
+                            propio.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-xs-12">
+                <div class="card">
+                    <figure class="pastillaconten">
+                        <picture>
+                            <source media="(min-width: 991px)" srcset="img/3d2.gif">
+                            <img src="img/3Dnuevo.gif" class="card-img-bottom" alt="Gif auto girando">
+                        </picture>
+                        <figcaption class="card-text card-img-overlay text-center pt-5 fw-bold">
+                            <h3 class="card-title h5 fw-bold">3D Lowpoly</h3>
+                            Utilizando <em>Blockbench</em> y Blender, me fascina la estética del lowpoly, aunque me
+                            queda mucho
+                            por aprender!
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-xs-12">
+                <div class="card">
+                    <figure class="pastillaconten">
+                        <picture>
+                            <source media="(min-width: 991px)" srcset="img/pixanim2.gif">
+                            <img src="img/pixanim.gif" class="card-img-bottom" alt="Animacion personaje pixelart">
+                        </picture>
+                        <figcaption class="card-text card-img-overlay text-center pt-5 fw-bold">
+                            <h3 class="card-title h5 fw-bold">Pixel Art</h3>
+                            Junto a <em>Aseprite</em>, he logrado realizar algunas animaciones en pixelart, como también
+                            varios
+                            retratos.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-xs-12">
+                <div class="card">
+                    <figure class="pastillaconten">
+                        <picture>
+                            <source media="(min-width: 991px)" srcset="img/chloeloop.gif">
+                            <img src="img/chloenuevo.gif" class="card-img-bottom" alt="Gif cd girando">
+                        </picture>
+                        <figcaption class="card-text card-img-overlay text-center pt-5 fw-bold">
+                            <h3 class="card-title h5 fw-bold">Animaciones</h3>
+                            Sumando <em>After Effects</em> a mis dibujos he realizado animaciones, como también
+                            proyectos de
+                            Motion Graphics.
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- fin pastillas -->
+
+    <!-- pastillas cel -->
+    <div class="pastillascel container">
+        <h2>Mis Skills</h2>
+        <section class="container">
+            <div class="row">
+                <figure class="card col-xl-3 col-md-6 col-xs-12">
+                    <img src="img/miku_xs.png" class="card-img-top" alt="Dibujo Hatsune Miku">
+                    <figcaption class="pastillaconten">
+                        <h3 class="h5 card-title text-center fs-2">Ilustraciones</h3>
+                        <p class="card-text">Utilizando <em>Clip studio paint</em> y una tableta Huion, realizo fanarts
+                            y dibujos
+                            de origen propio.</p>
+                    </figcaption>
+                </figure>
+                <figure class="card col-xl-3 col-md-6 col-xs-12">
+                    <img src="img/3Dnuevo.gif" class="card-img-top" alt="Gif auto 3D girando">
+                    <figcaption class="pastillaconten">
+                        <h3 class="h5 card-title text-center fs-2">3D Lowpoly</h3>
+                        <p class="card-text">Utilizando <em>Blockbench</em> y Blender, me fascina la estética del
+                            lowpoly, aunque
+                            me queda mucho por aprender!</p>
+                    </figcaption>
+                </figure>
+                <figure class="card col-xl-3 col-md-6 col-xs-12">
+                    <img src="img/pixanim.gif" class="card-img-top" alt="Animacion personaje pixelart">
+                    <figcaption class="pastillaconten">
+                        <h3 class="h5 card-title text-center fs-2">Pixelart</h3>
+                        <p class="card-text">Junto a <em>Aseprite</em>, he logrado realizar algunas animaciones en
+                            pixelart, como
+                            también varios retratos.</p>
+                    </figcaption>
+                </figure>
+                <figure class="card col-xl-3 col-md-6 col-xs-12">
+                    <img src="img/chloenuevo.gif" class="card-img-top" alt="Gif cd girando">
+                    <figcaption class="pastillaconten">
+                        <h3 class="h5 card-title text-center fs-2">Animaciones</h3>
+                        <p class="card-text">Sumando After Effects a mis dibujos he realizado animaciones, como también
+                            proyectos de Motion Graphics.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </div>
+    <!-- Fin pastillas cel -->
+    <!-- Formulario -->
+    <section id="contacto" class="container justify-content-center">
+        <div class="contactame">
+            <h2>Contacto</h2>
+            <p>Si te gusta mi trabajo y querés saber un poco más, recibir un presupuesto, o cualquier otra duda,
+                ¡contactame!</p>
+        </div>
+        <form class="container col-md-6 fw-bold" action="enviar_formulario.php"
+            enctype="application/x-www-form-urlencoded" method="post">
+            <div class="col-12">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="col-12">
+                <label for="mail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="mail">
+            </div>
+            <div class="mb-3">
+                <label for="FormControlTextarea1" class="form-label">Tu comentario</label>
+                <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Fin del formulario -->
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="redes">
+            <div class="container">
+                <div class="row">
+                    <a class="col-4" href="https://www.fiverr.com/jetphoneart" target="_blank"><img
+                            src="img/mobfiverr.png" alt="Fiverr"></a>
+                    <a class="col-4" href="https://www.instagram.com/jetphoneart/" target="_blank"><img
+                            src="img/mobig.png" alt="Instagram"></a>
+                    <a class="col-4" href="https://twitter.com/jetphone2" target="_blank"><img src="img/mobtw.png"
+                            alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Bicais Martire Joaquín y Martinez Alvarez Sol - DGT4BV - Turno Tarde - 2023 </p>
+        </div>
+    </footer>
+    <!-- Fin del footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/marcaBoton.js"></script>
+    <script src="js/fotorama.js"></script>
+</body>
+
+</html>

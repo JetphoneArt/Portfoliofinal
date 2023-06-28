@@ -1,0 +1,290 @@
+body {
+    background-color: #1F2428;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    animation-name: entrada;
+    animation-duration: 1s;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h2, h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+section {
+    background-color: #ffffff;
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: translate(0, 50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+
+    }
+}
+
+
+/* Header */
+#logo {
+    font-size: 0;
+    background-image: url("../img/logo2.png");
+    width: 64px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 25px);
+    margin-top: 14px;
+}
+
+#barra li {
+    margin: 0.5rem;
+}
+
+.navbar-toggler {
+    height: 75px;
+    margin: 10px 0 10px 10px;
+    color: coral;
+}
+
+#barra {
+    margin-top: 5px;
+    height: 100vh;
+    z-index: 3;
+    background-color: coral;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+#barra li a {
+    color: coral;
+    text-decoration: none;
+    display: block;
+    background: #fcf8ee;
+    text-align: center;
+    margin-top: 30px;
+    height: 48px;
+    line-height: 2em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+/* Fin del header */
+
+/* Carrusel */
+.texto{
+    background-color: grey;
+    height: 100%;
+    z-index: 0;
+    color: #ffffff;
+    padding-top: .1rem;
+}
+/* Fin Carrusel */
+/* Galería */
+#galeria {
+    background-color: black;
+    padding: 2rem;
+}
+
+#galeria h2 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1rem;
+    color: #ffffff;
+}
+
+#galeria p {
+    padding: 0 3rem;
+    color: #ffffff;
+    text-align: center;
+}
+/* Fin Galería */
+
+/* Video */
+#video{
+    background-color: coral;
+}
+
+#video h2, p{
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0rem 0rem 0rem ;
+}
+/* Pastillas */
+#pastillas{
+    display: none;
+}
+.pastillascel{
+    background-color: #ffffff
+}
+.pastillascel h2{
+    color: coral;
+    padding-top: 1.5rem ;
+    text-align: center;
+}
+
+.pastillaconten h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: coral;
+}
+
+.pastillaconten p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: coral;
+}
+
+
+/* Fin pastillas */
+/* Form */
+#contacto{
+    background-color: black;
+    padding: 2rem;
+}
+.contactame{
+    margin: auto;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+form{
+    background-color: black;
+    width: 100%;
+    color: coral;
+}
+.btn-primary{
+    background-color: coral;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color:coral;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0.5rem;
+    color: white;
+}
+
+.redes{
+    margin: 10px 0 20px 0;
+}
+/* Fin Footer */
+
+/* Medias */
+@media screen and (min-width: 576px) {
+
+    #pastillas{
+        display: none;
+    }
+    .pastillascel{
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 776px) {
+    .texto {
+        height: .1rem;
+        color: #ffffff;
+        position: relative;
+        z-index: 3;
+        top: -12rem;
+        padding: 0;
+        /* width: 50%; */
+        background-color: rgba(255, 250, 240, 0);
+    }
+
+    
+}
+
+@media screen and (min-width: 991px) {
+    
+
+    #logo {
+        font-size: 0;
+        background-image: url("../img/logo2.png");
+        width: 64px;
+        height: 70px;
+        line-height: 70px;
+        position: absolute;
+        z-index: 4;
+        margin-top: 0px;
+        margin-left: 45%
+        
+    }
+
+    
+    #barra li a:hover {
+        color: grey;
+    }
+
+    #barra ul {
+        margin: 0.5rem;      
+    }
+    
+
+    #barra li a {
+        font-size: 18px;
+    }
+
+    #barra {
+        margin-top: 0px;
+        height: 75px;
+
+    }
+
+
+    #barra li a {
+        background: none;
+        margin-top: 0;
+        color: #fdfdf6;
+    }
+
+    #barra li {
+
+        margin: 0 1.5em;
+        text-align: center;
+        align-items: flex-start;
+    }
+    figure{
+        position: relative;
+    }
+    #pastillas{
+        display: block;
+        background-color: #ffffff;
+        padding: 1rem;
+    }
+    #pastillas h2{
+        color: coral;
+        padding: 1rem 0rem;
+        text-align: center;
+    }
+    figcaption{
+        background-color: rgba(255, 127, 80, 0.418);
+        z-index: -1;
+        color: #ffffff;
+    }
+    figure:hover figcaption{
+        z-index: 1;
+    }
+    .pastillascel{
+        display: none;
+    }
+}
+
